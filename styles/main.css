@@ -24,6 +24,15 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+body {
+    opacity: 1;
+    transition: 5s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;

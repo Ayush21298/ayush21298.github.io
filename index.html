@@ -15,11 +15,22 @@
 }
 
 body {
+    opacity: 1;
+    transition: 5s opacity;
+    background-image: url('./images/bg-2.gif')
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+    background-image: none;
+    background-color: #000;
+}
+
+body {
   margin: 0;
   font-family: avengers;
   font-size: 20px;
   background-size: cover;
-  background-image: url('./images/bg-2.gif')
 }
 
 #myVideo {
@@ -64,7 +75,7 @@ body {
 }
 </style>
 </head>
-<body>
+<body class="fade-out">
 
 <!-- <video autoplay muted loop id="myVideo"> -->
 <video muted id="myVideo" style="display: none;">
@@ -78,12 +89,17 @@ body {
 </div>
 
 <script>
+$(document).ready(function() {
+  $('body').removeClass('fade-out');
+});
+
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
 
 function myFunction() {
   // if (video.paused) {
     $("#myVideo").fadeIn(2000);
+    video.playbackRate = 3.0; 
     video.play();
     // btn.innerHTML = "Evolve";
     // btn.style.display = "none";
