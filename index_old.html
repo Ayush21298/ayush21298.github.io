@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ayush Patel</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+  font-family: avengers;
+  src: url('./fonts/avengeance/AVENGEANCE HEROIC AVENGER.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    opacity: 1;
+    transition: 5s opacity;
+    background-image: url('./images/bg-2.gif')
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+    background-image: none;
+    background-color: #000;
+}
+
+body {
+  margin: 0;
+  font-family: avengers;
+  font-size: 20px;
+  background-size: cover;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 50vh;
+  text-align: center;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  font-family: Algerian;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 1px;
+  transition: 0.5s ease;
+}
+
+#myBtn:hover {
+  /*background: #ddd;*/
+  /*color: black;*/
+  letter-spacing: 10px;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: #fff;
+  margin: 0px;
+}
+</style>
+</head>
+<body class="fade-out">
+
+<!-- <video autoplay muted loop id="myVideo"> -->
+<video muted id="myVideo" style="display: none;">
+  <source src="./vids/Green_Streaks_Title_BackgroundVidevo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1 id="myName">Ayush Patel</h1>
+  <button id="myBtn" onclick="myFunction()"><b>ENTER</b></button>
+</div>
+
+<script>
+$(document).ready(function() {
+  $('body').removeClass('fade-out');
+});
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  // if (video.paused) {
+    $("#myVideo").fadeIn(2000);
+    video.playbackRate = 3.0; 
+    video.play();
+    // btn.innerHTML = "Evolve";
+    // btn.style.display = "none";
+    $("#myBtn").fadeOut(1000);
+    $("#myName").fadeOut(1000);
+  // } else {
+  //   video.pause();
+  //   btn.innerHTML = "Evolve";
+  // }
+}
+video.addEventListener('ended',function() {
+  // alert('video is ended');       
+  window.location.href = './home.html';
+  })
+</script>
+
+</body>
+</html>
