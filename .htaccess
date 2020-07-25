@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRUle ^github/?$ https://github.com/Ayush21298
