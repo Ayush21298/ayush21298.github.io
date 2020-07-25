@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRUle ^github/?$ https://github.com/Ayush21298
+RewriteRUle ^github/?$ https://github.com/Ayush21298/$1 [P]
