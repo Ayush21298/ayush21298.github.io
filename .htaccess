@@ -1,2 +1,6 @@
 RewriteEngine On
-RewriteRUle ^github/?$ https://github.com/Ayush21298/$1 [P]
+RewriteRule ^github/?$ https://github.com/Ayush21298/
+RewriteRule ^gitlab/?$ https://gitlab.com/Ayush21298/
+RewriteRule ^facebook/?$ https://www.facebook.com/ayush21298
+RewriteRule ^linkedin/?$ https://www.linkedin.com/in/ayush-patel-38a733144/
+RewriteRule ^instagram/?$ https://www.instagram.com/ayush21298/
