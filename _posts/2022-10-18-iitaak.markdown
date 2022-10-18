@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "IIT Alumni Association of Korea (IITAAK)"
+date:   2022-10-18 21:49:56 +0900
+author: Ayush Patel
+categories: iitaak
+---
+IIT Alumni Association of Korea (IITAAK) is a dynamic group of IIT graduates (IITian) living and working in the Republic of Korea. IITians have left their mark in most parts of the world. We want to replicate that here and strengthen the reputation of brand IIT through interaction with local community, business, academia and media. We hope that this will not only make our lives here more meaningful but will also help in forging more productive cooperation between Korea and India, at all levels.
+
+The association's Vision, Mission and Core Values are ...[Read more][iitaak-vision]{:target="_blank"}
+
+[iitaak-vision]: http://www.iitalumkorea.org/about.html 
