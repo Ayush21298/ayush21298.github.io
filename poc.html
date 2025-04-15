@@ -3,14 +3,6 @@ layout: default
 ---
 <div class="section" id="about">
   <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row">
-        <ul>
-          {% for image in site.poc1 %}
-                  <img src="{{ file.url }}" />
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
+    {% include image-gallery.html folder="/images" %}
   </div>
 </div>
