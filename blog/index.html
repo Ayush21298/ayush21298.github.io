@@ -1,0 +1,42 @@
+---
+layout: default
+title: Blog
+description: >-
+  Articles and notes by Ayush Patel — Software Engineer at Samsung Electronics,
+  South Korea — on AI, cloud infrastructure, the IIT community in Korea and life
+  as an engineer in Seoul.
+redirect_from:
+  - /posts.html
+  - /posts/
+---
+<div class="post-hero">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Blog</span>
+      <h1>Notes &amp; stories</h1>
+      <p class="muted">Writing on AI, cloud infrastructure, community and life in Korea.
+        Subscribe via <a href="/feed.xml">RSS {% include icon.html name="rss" %}</a></p>
+    </div>
+  </div>
+</div>
+<div class="section" style="padding-top:0.5rem">
+  <div class="container">
+    <ul class="post-list">
+      {%- for post in site.posts %}
+      <li>
+        <a class="post-card" href="{{ post.url | relative_url }}">
+          <div class="p-meta">
+            <span>{% include icon.html name="calendar" %} <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></span>
+            {%- assign words = post.content | strip_html | number_of_words %}
+            <span>{% include icon.html name="clock" %} {{ words | divided_by: 200 | at_least: 1 }} min read</span>
+            {%- if post.categories.size > 0 %}<span class="tag">{{ post.categories | first }}</span>{%- endif %}
+          </div>
+          <h3>{{ post.title | escape }}</h3>
+          <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 180 }}</p>
+          <span class="read-more">Read more {% include icon.html name="arrow-right" %}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</div>
