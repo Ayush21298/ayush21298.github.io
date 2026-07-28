@@ -40,6 +40,8 @@ visual effects.
 Watching Korean families, students and the Indian diaspora laugh together in
 front of a green screen was everything community work should feel like.
 
+![Ayush Patel speaking at the Embassy of India, Seoul, with the Indian and Korean flags beside the podium](/images/ayush-patel-embassy-of-india-speech.jpg){: width="996" height="1200" loading="lazy"}
+
 ## Beyond alumni — IIK and ISRK
 
 This year I also took on two new roles: **Core Team Member of Indians in Korea
