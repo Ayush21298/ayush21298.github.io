@@ -17,8 +17,8 @@
   --surface: #ffffff;
   --surface-2: #f1f5fb;
   --text: #17222f;
-  --text-soft: #4b5b6e;
-  --text-faint: #6e7f93;
+  --text-soft: #43536a;
+  --text-faint: #5a6b80;
   --border: #dfe6ef;
   --border-strong: #c9d4e2;
   --accent: #1d4ed8;
@@ -92,14 +92,23 @@ video {
   height: auto;
 }
 
+/* Prose links are underlined so they don't rely on color alone (WCAG 1.4.1);
+   component links (buttons, cards, nav) opt out below. */
 a {
   color: var(--accent-text);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.btn, .icon-btn, .brand, .chip a, .tag,
+.nav-menu a, .footer-links a, .post-card, .post-nav a,
+.contact-list a, .skip-link, .read-more, .theme-toggle {
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
