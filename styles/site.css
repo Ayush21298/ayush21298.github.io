@@ -911,38 +911,15 @@ th {
   margin: 0.3em 0 0;
 }
 
+/* Timelines stay a single tight rail at every width — no side-switching
+   gaps; constrain line length on large screens for comfortable reading. */
 @media (min-width: 900px) {
-  .timeline-center::before {
-    left: 50%;
-    transform: translateX(-50%);
+  .timeline {
+    max-width: 48rem;
   }
 
-  .timeline-center > li {
-    width: 50%;
-    padding: 0 2.4rem 1.8rem 0;
-  }
-
-  .timeline-center > li::before {
-    left: auto;
-    right: -7px;
-  }
-
-  .timeline-center > li:nth-child(even) {
-    margin-left: 50%;
-    padding: 0 0 1.8rem 2.4rem;
-  }
-
-  .timeline-center > li:nth-child(even)::before {
-    right: auto;
-    left: -7px;
-  }
-
-  .timeline-center > li:nth-child(odd) .t-card {
-    text-align: right;
-  }
-
-  .timeline-center > li:nth-child(odd) .t-card:hover {
-    transform: translateX(-4px);
+  .timeline > li {
+    padding-left: 2.6rem;
   }
 }
 
