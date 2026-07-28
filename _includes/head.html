@@ -21,6 +21,9 @@
 <meta name="keywords" content="{{ page.keywords | default: site.keywords | strip_newlines | strip }}">
 <meta name="geo.region" content="KR-11">
 <meta name="geo.placename" content="Seoul, Republic of Korea">
+{%- if site.naver_site_verification %}
+<meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
+{%- endif %}
 <meta name="format-detection" content="telephone=no">
 {% seo %}
 {% feed_meta %}

@@ -66,6 +66,11 @@ social:
 
 webmaster_verifications:
   google: cuVspknwSI0oHJnOYqO1ZvifhTGfNgavgJ4nTgYEN2k
+  # bing: paste the msvalidate.01 token from Bing Webmaster Tools here
+
+# Naver Search Advisor verification (important for visibility in Korea) —
+# paste the token from searchadvisor.naver.com and uncomment:
+# naver_site_verification: TOKEN_HERE
 
 # Build settings
 theme: minima
