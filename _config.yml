@@ -19,7 +19,8 @@ keywords: >-
   Indian Students and Researchers in Korea, ISRK, Kubernetes expert,
   Certified Kubernetes Administrator, CKA, open source contributor,
   Kubernetes networking, cloud infrastructure, business strategy,
-  TOPIK Level 5, KIIP Level 6, IIT Delhi CSE 2020
+  TOPIK Level 5, KIIP Level 6, IIT Delhi CSE 2020, APSoftz, apsoftz.com,
+  APSoftz Ayush Patel, ayush21298
 domain: ayushpatel.com
 baseurl: ''
 url: https://ayushpatel.com
@@ -54,6 +55,7 @@ social:
   name: Ayush Patel
   links:
     - https://ayushpatel.com
+    - https://apsoftz.com
     - https://github.com/Ayush21298
     - https://www.linkedin.com/in/ayush21298
     - https://www.facebook.com/ayush21298

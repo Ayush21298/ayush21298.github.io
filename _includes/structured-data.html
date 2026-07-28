@@ -7,7 +7,7 @@
       "@type": "Person",
       "@id": "{{ site.url }}/#person",
       "name": "Ayush Patel",
-      "alternateName": "Ayush21298",
+      "alternateName": ["Ayush21298", "ayush21298"],
       "url": "{{ site.url }}/",
       "image": [
         {
@@ -140,6 +140,7 @@
         }
       ],
       "sameAs": [
+        "https://apsoftz.com",
         "https://github.com/Ayush21298",
         "https://www.linkedin.com/in/ayush21298",
         "https://twitter.com/Ayush21298",
@@ -150,10 +151,26 @@
       ]
     },
     {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#apsoftz",
+      "name": "APSoftz",
+      "alternateName": ["apsoftz", "apsoftz.com"],
+      "url": "https://apsoftz.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/images/apsoftz-circle.png",
+        "width": 460,
+        "height": 460
+      },
+      "founder": { "@id": "{{ site.url }}/#person" },
+      "sameAs": [ "{{ site.url }}/" ]
+    },
+    {
       "@type": "WebSite",
       "@id": "{{ site.url }}/#website",
       "url": "{{ site.url }}/",
       "name": "Ayush Patel",
+      "alternateName": ["ayushpatel.com", "APSoftz", "apsoftz.com", "Ayush21298"],
       "description": {{ site.description | strip_newlines | strip | jsonify }},
       "publisher": { "@id": "{{ site.url }}/#person" },
       "inLanguage": "en"
