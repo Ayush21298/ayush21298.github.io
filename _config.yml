@@ -57,7 +57,8 @@ social:
     - https://twitter.com/Ayush21298
     - https://gitlab.com/Ayush21298
 
-google-site-verification: cuVspknwSI0oHJnOYqO1ZvifhTGfNgavgJ4nTgYEN2k
+webmaster_verifications:
+  google: cuVspknwSI0oHJnOYqO1ZvifhTGfNgavgJ4nTgYEN2k
 
 # Build settings
 theme: minima
