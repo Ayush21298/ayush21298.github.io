@@ -17,7 +17,7 @@ GitHub Pages at [ayushpatel.com](https://ayushpatel.com).
 ## Develop locally
 
 ```bash
-docker run --rm -it -v "$PWD":/site -w /site -p 4000:4000 ruby:3.1 \
+docker run --rm -it -v "$PWD":/site -w /site -p 4000:4000 ruby:3.3 \
   bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
 # open http://localhost:4000
 ```
