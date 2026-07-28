@@ -84,6 +84,28 @@ defaults:
       path: ''
     values:
       image: /images/og-image.png
+  # Keep social redirect stubs and raw galleries out of the sitemap
+  - scope:
+      path: 'facebook.html'
+    values: { sitemap: false }
+  - scope:
+      path: 'github.html'
+    values: { sitemap: false }
+  - scope:
+      path: 'gitlab.html'
+    values: { sitemap: false }
+  - scope:
+      path: 'instagram.html'
+    values: { sitemap: false }
+  - scope:
+      path: 'linkedin.html'
+    values: { sitemap: false }
+  - scope:
+      path: 'twitter.html'
+    values: { sitemap: false }
+  - scope:
+      path: 'images/poc'
+    values: { sitemap: false }
 
 sass:
   style: compressed
@@ -96,4 +118,3 @@ exclude:
   - LICENSE
   - vendor/
   - node_modules/
-  - fonts/avengeance.zip
