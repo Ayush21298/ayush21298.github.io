@@ -40,6 +40,19 @@ visual effects.
 Watching Korean families, students and the Indian diaspora laugh together in
 front of a green screen was everything community work should feel like.
 
+## Speaking at the India–Korea Forum on AI
+
+In July 2026 I had the honour of speaking at the **India–Korea Forum on AI
+2026** at Ewha Womans University, Seoul — a day-long forum under the theme
+*"Fostering India–Korea AI Cooperation in a New Digital Era"*, bringing
+together policymakers, academics, entrepreneurs and industry experts from both
+countries. Sharing a stage dedicated to the two countries I call home, on the
+technology I work on every day, is a memory I will keep for a long time.
+
+And of course, every year there are the **IITAAK anniversary and year-end
+celebrations** — evenings of food, culture and laughter that remind all of us
+why this community matters.
+
 ![Ayush Patel speaking at the Embassy of India, Seoul, with the Indian and Korean flags beside the podium](/images/ayush-patel-embassy-of-india-speech.jpg){: width="996" height="1200" loading="lazy"}
 
 ## Beyond alumni — IIK and ISRK
