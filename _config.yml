@@ -1,52 +1,51 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site settings for ayushpatel.com — built with Jekyll, hosted on GitHub Pages.
+# Values here feed jekyll-seo-tag, jekyll-feed and jekyll-sitemap.
 
 title: Ayush Patel
-tagline: Personal Website
+tagline: Software Engineer at Samsung Electronics, South Korea
 email: patel.ayush08@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Ayush Patel. I am an Engineer in Networks R&D Team at Samsung Electronics (South Korea).
-  I am a tech enthusiast interested in Cloud Infrastructure Development, Machine Learning, 
-  Networks Architecture and Development of WebApps and Mobile apps.
-  I am an avid learner who is enthusiastic about learning something new each and every day. 
-  On the whole, I love to code and am an enthusiastic coder.
+description: >-
+  Ayush Patel is a Software Engineer in the SmartHome AI Lab (AI Core Team) at
+  Samsung Electronics HQ, South Korea, and President of the IIT Alumni
+  Association of Korea (IITAAK). He graduated in Computer Science and
+  Engineering from IIT Delhi (B.Tech 2020, CGPA 9.04) and works on artificial
+  intelligence, cloud infrastructure, Kubernetes networking and large-scale
+  distributed systems.
+keywords: >-
+  Ayush Patel, Ayush Patel Samsung, Ayush Patel IIT Delhi, Ayush21298,
+  Software Engineer Seoul, Samsung Electronics engineer, Samsung Research,
+  SmartHome AI, IITAAK, IIT Alumni Association of Korea, Kubernetes networking,
+  cloud infrastructure, IIT Delhi CSE 2020
 domain: ayushpatel.com
-baseurl: '' # the subpath of your site, e.g. /blog
-url: https://ayushpatel.com # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ''
+url: https://ayushpatel.com
+repository: Ayush21298/ayush21298.github.io
+timezone: Asia/Seoul
+locale: en_US
+lang: en
+
 twitter_username: Ayush21298
-github_username:  Ayush21298
+github_username: Ayush21298
+
 author:
   name: Ayush Patel
   display_name: Ayush Patel
-  picture: /images/ayush-patel-0.jpg
+  picture: /images/ayush-patel-4.png
   email: patel.ayush08@gmail.com
   web: https://ayushpatel.com
   url: https://ayushpatel.com
   twitter: Ayush21298
   github: Ayush21298
+
 twitter:
   username: Ayush21298
-  card: summary
+  card: summary_large_image
+
 facebook:
   admins: ayush21298
-logo: /favicon.ico
+
+logo: /images/ayush-patel-4.png
+
 social:
   name: Ayush Patel
   links:
@@ -57,8 +56,8 @@ social:
     - https://www.instagram.com/ayush21298/
     - https://twitter.com/Ayush21298
     - https://gitlab.com/Ayush21298
+
 google-site-verification: cuVspknwSI0oHJnOYqO1ZvifhTGfNgavgJ4nTgYEN2k
-locale: en_US
 
 # Build settings
 theme: minima
@@ -66,23 +65,35 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+feed:
+  posts_limit: 20
+
+# Front-matter defaults: keep per-post front matter minimal and give every
+# page a social share image out of the box.
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      author: Ayush Patel
+      image: /images/og-image.png
+  - scope:
+      path: ''
+    values:
+      image: /images/og-image.png
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - BLOGGING.md
+  - LICENSE
+  - vendor/
+  - node_modules/
+  - fonts/avengeance.zip
