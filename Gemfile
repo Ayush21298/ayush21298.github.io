@@ -34,3 +34,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Add Jeykll SEO Tag
 gem 'jekyll-seo-tag'
+
+# Ruby 3 removed webrick from the stdlib; Jekyll 3.9 needs it for `jekyll serve`.
+# GitHub Pages ignores this file in production — local development only.
+gem "webrick", "~> 1.8"
