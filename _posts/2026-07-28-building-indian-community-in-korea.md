@@ -7,7 +7,10 @@ description: >-
 date: 2026-07-28 10:00:00 +0900
 categories: community
 tags: [iitaak, iik, isrk, india-day, seoul, community, korea]
+image: /images/ayush-patel-seminar-web.jpg
 ---
+
+![Ayush Patel at a community event in Seoul](/images/ayush-patel-seminar-web.jpg){: width="1200" height="1200" loading="lazy"}
 
 When I moved to Korea in 2020, I knew almost no one here. Five years later, the
 Indian community in Korea feels like family — and building that community has
