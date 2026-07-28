@@ -2,9 +2,8 @@
 layout: post
 title: "IIT Alumni Association of Korea (IITAAK)"
 description: >-
-  IITAAK is a dynamic group of IIT graduates living and working in the Republic
-  of Korea, strengthening the IIT brand and building cooperation between Korea
-  and India.
+  IITAAK is a dynamic group of IIT graduates living and working in Korea,
+  strengthening the IIT brand and building India–Korea cooperation.
 date: 2022-10-18 21:49:56 +0900
 author: Ayush Patel
 categories: iitaak

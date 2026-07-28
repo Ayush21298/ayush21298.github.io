@@ -1,9 +1,8 @@
 ---
 title: "From IITAAK to India Day Seoul: Building the Indian Community in Korea"
 description: >-
-  Hosting the Fun Cinema & VFX booth at the Embassy of India's first India Day
-  in Seoul, leading IITAAK, and connecting Indian professionals, students and
-  researchers across Korea.
+  From leading IITAAK to hosting India Day Seoul and speaking at the
+  India–Korea Forum on AI — building the Indian community in Korea.
 date: 2026-07-28 10:00:00 +0900
 categories: community
 tags: [iitaak, iik, isrk, india-day, seoul, community, korea]
