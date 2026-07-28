@@ -1,0 +1,104 @@
+{%- comment -%} Rich JSON-LD graph: Person + WebSite (+ ProfilePage on home, BreadcrumbList on posts) {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": "Ayush Patel",
+      "alternateName": "Ayush21298",
+      "url": "{{ site.url }}/",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/images/ayush-patel-4.png",
+        "width": 332,
+        "height": 332
+      },
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Samsung Electronics",
+        "url": "https://www.samsung.com/",
+        "department": {
+          "@type": "Organization",
+          "name": "SmartHome AI Lab, Samsung Research"
+        }
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Indian Institute of Technology Delhi",
+          "alternateName": "IIT Delhi",
+          "url": "https://home.iitd.ac.in/"
+        },
+        {
+          "@type": "School",
+          "name": "O. P. Jindal School, Raigarh"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Seoul",
+        "addressCountry": "KR"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "email": "mailto:patel.ayush08@gmail.com",
+      "knowsLanguage": ["English", "Hindi", "Korean"],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Cloud Infrastructure",
+        "Kubernetes",
+        "Computer Networking",
+        "Distributed Systems",
+        "Web Development",
+        "Mobile App Development"
+      ],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "IIT Alumni Association of Korea (IITAAK)",
+        "url": "https://www.iitalumkorea.org/"
+      },
+      "sameAs": [
+        "https://github.com/Ayush21298",
+        "https://www.linkedin.com/in/ayush21298",
+        "https://twitter.com/Ayush21298",
+        "https://www.facebook.com/ayush21298",
+        "https://www.instagram.com/ayush21298/",
+        "https://gitlab.com/Ayush21298",
+        "https://www.iitalumkorea.org/office-bearers.html"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}/",
+      "name": "Ayush Patel",
+      "description": {{ site.description | strip_newlines | strip | jsonify }},
+      "publisher": { "@id": "{{ site.url }}/#person" },
+      "inLanguage": "en"
+    }{% if page.url == "/" %},
+    {
+      "@type": "ProfilePage",
+      "@id": "{{ site.url }}/#webpage",
+      "url": "{{ site.url }}/",
+      "name": {{ page.title | default: site.title | jsonify }},
+      "isPartOf": { "@id": "{{ site.url }}/#website" },
+      "about": { "@id": "{{ site.url }}/#person" },
+      "mainEntity": { "@id": "{{ site.url }}/#person" }
+    }{% endif %}{% if page.layout == "post" %},
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ site.url }}/blog/" },
+        { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": "{{ page.url | absolute_url }}" }
+      ]
+    }{% endif %}
+  ]
+}
+</script>

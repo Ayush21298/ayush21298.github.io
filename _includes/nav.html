@@ -1,0 +1,26 @@
+<header class="site-header">
+  <nav class="container nav-inner" aria-label="Primary">
+    <a class="brand" href="/#top">
+      <img src="/images/ayush-patel-4.png" alt="" width="34" height="34">
+      <span>Ayush Patel</span>
+    </a>
+    <div class="nav-actions">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#opensource">Open Source</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#community">Community</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/CV.pdf" target="_blank" rel="noopener">Résumé</a></li>
+        <li><a class="nav-cta" href="/#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Switch between dark and light theme">
+        {% include icon.html name="sun" %}{% include icon.html name="moon" %}
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        {% include icon.html name="menu" %}
+      </button>
+    </div>
+  </nav>
+</header>
