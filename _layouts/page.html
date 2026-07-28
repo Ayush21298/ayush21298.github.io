@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="post-hero">
+  <div class="container">
+    <h1>{{ page.title | escape }}</h1>
+    {%- if page.description %}<p class="muted">{{ page.description }}</p>{%- endif %}
+  </div>
+</div>
+<div class="section" style="padding-top:1rem">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>
