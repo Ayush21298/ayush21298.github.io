@@ -1,6 +1,6 @@
 /* TEAM */
 Owner: Ayush Patel
-Role: Software Engineer, SmartHome AI Lab, Samsung Electronics (South Korea)
+Role: Software Engineer, AI Core Team, Samsung Electronics (South Korea)
 Contact: contact [at] ayushpatel.com
 GitHub: https://github.com/Ayush21298
 LinkedIn: https://www.linkedin.com/in/ayush21298
