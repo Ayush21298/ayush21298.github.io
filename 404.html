@@ -1,14 +1,18 @@
 ---
 permalink: /404.html
 layout: default
+title: Page not found
+sitemap: false
+noindex: true
 ---
-
-<div class="section" id="404">
+<div class="error-page">
   <div class="container">
-    <center>
-    <h1>404</h1>
-      <p><strong>Page not found :(</strong></p>
-      <p>The requested page could not be found.</p>
-    </center>
+    <p class="code">404</p>
+    <h1>Page not found</h1>
+    <p class="muted">The page you&rsquo;re looking for doesn&rsquo;t exist or has moved.</p>
+    <p style="margin-top:1.6rem">
+      <a class="btn btn-primary" href="/">{% include icon.html name="arrow-left" %} Back to home</a>
+      <a class="btn btn-ghost" href="/blog/">Read the blog</a>
+    </p>
   </div>
 </div>
