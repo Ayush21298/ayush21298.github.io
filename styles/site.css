@@ -659,6 +659,28 @@ th {
   margin: 0;
 }
 
+/* ---------- Section sub-headings ---------- */
+.sub-head {
+  margin: 2.8rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sub-head h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sub-head::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--accent-soft), transparent);
+}
+
 /* ---------- Cards & grids ---------- */
 .card {
   background: var(--surface);
@@ -707,6 +729,46 @@ th {
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-top: 0.9rem;
+}
+
+/* Equal-height tiles: grid cards stretch, tags pin to the bottom edge */
+.grid .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid .card .tags {
+  margin-top: auto;
+  padding-top: 0.9rem;
+}
+
+.grid .card .tags:first-child {
+  padding-top: 0;
+}
+
+.cert-card h3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.cert-card h3 .icon {
+  flex: none;
+  margin-top: 0.18em;
+  color: var(--accent-text);
+}
+
+.cert-card p {
+  margin-bottom: 0;
+}
+
+.event-card {
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(135deg, var(--accent-soft), var(--surface) 45%);
+}
+
+.event-card .meta .icon {
+  color: var(--accent-text);
 }
 
 .grid {
@@ -792,6 +854,7 @@ th {
   padding-bottom: 0.2rem;
 }
 
+/* Dots sit on top of the line; no halo, so the line reads as continuous */
 .timeline > li::before {
   content: "";
   position: absolute;
@@ -802,11 +865,6 @@ th {
   border-radius: 50%;
   background: var(--surface);
   border: 3px solid var(--accent);
-  box-shadow: 0 0 0 4px var(--bg);
-}
-
-.section-alt .timeline > li::before {
-  box-shadow: 0 0 0 4px var(--bg-soft);
 }
 
 .timeline .t-card {
