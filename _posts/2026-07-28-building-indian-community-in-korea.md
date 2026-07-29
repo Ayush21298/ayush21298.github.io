@@ -29,8 +29,9 @@ the Indian Embassy in Seoul.
 
 The highlight of this year was **India Day Seoul 2026** — the Embassy of
 India's first large-scale outdoor festival, held on **May 16, 2026 at the
-Neoreundeul Lawn Area, Yeouido Hangang Park**. Alongside the cultural
-performances and food stalls, we hosted the
+Neoreundeul Lawn Area, Yeouido Hangang Park**. I wore several hats that day:
+host and Emcee on the main stage, technical coordinator for the festival, and
+manager of our IITAAK-run
 [**Fun Cinema & VFX Booth**](/india-day-seoul-2026/vfx/) — a playful
 celebration of Indian film culture where visitors became the stars of their own
 Bollywood-style movie moments, posing with iconic landmarks and show-stopping
